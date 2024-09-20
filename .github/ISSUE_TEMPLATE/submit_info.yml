@@ -1,0 +1,59 @@
+name: "Submit new asset"
+description: "Create or update listed assets"
+title: "Update info for ASSET_NAME"
+labels: ["update info"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Asset Info
+
+        Use this form to submit info on an asset and any deployed contracts. Please ensure there is only one issue open per asset at a time.
+  - type: input
+    id: asset-name
+    attributes:
+      label: Asset Name
+      description: Friendly name for your asset.
+      placeholder: Wrapped Ether
+    validations:
+      required: true
+  - type: input
+    id: asset-symbol
+    attributes:
+      label: Asset Symbol
+      description: Official token or asset symbol. This value is case sensitive.
+      placeholder: WETH
+    validations:
+      required: true
+  - type: input
+    id: asset-icon
+    attributes:
+      label: Asset Icon
+      description: A URL to the official asset icon to utilize for this asset. Note that SVG images are greatly preferred.
+      placeholder: https://etherscan.io/token/images/weth_28.png
+    validations:
+      required: true
+  - type: checkboxes
+    id: chains
+    attributes:
+      label: Networks
+      description: Networks where the asset is deployed.
+      options:
+        - Ethereum Mainnet (1)
+        - Ethereum Sepolia (11155111)
+        - Ethereum Foundry (31337)
+        - Fuel Devnet (0)
+        - Fuel Testnet (0)
+        - Fuel Mainnet (9889)
+    validations:
+      required: false
+  - type: textarea
+    id: contract-addresses
+    attributes:
+      label: Contract & Asset Addresses
+      description: List of contract addresses. Enter one address per line, one per each network where the asset is deployed. For Fuel deployments, include both the contract and asset IDs.
+      render: text
+      placeholder: |
+        0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 Ethereum Mainnet
+        0x4ea6ccef1215d9479f1024dff70fc055ca538215d2c8c348beddffd54583d0e8 Fuel Mainnet Contract ID
+        0xa38a5a8beeb08d95744bc7f58528073f4052b254def59eba20c99c202b5acaa3 Fuel Mainnet Asset ID

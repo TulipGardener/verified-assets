@@ -42,8 +42,22 @@ jobs:
       - name: Generate assets JSON
         run: python create_assets_json.py
 
+      - name: Create current release zip
+        run: |
+          zip -r assets.zip images assets.gen.json
+          printf "@ assets.gen.json\n@=assets.json\n" | zipnote -w assets.zip
+
       - name: Sync images to S3
         run: s3cmd --delete-removed sync ./images/ s3://${{ env.AWS_S3_BUCKET }}/images/
 
-      - name: Upload Assets JSON
+      - name: Upload Assets JSON to S3
         run: s3cmd put ./assets.gen.json s3://${{ env.AWS_S3_BUCKET }}/assets.json
+
+      - name: Upload Assets ZIP to S3
+        run: s3cmd put ./assets.zip s3://${{ env.AWS_S3_BUCKET }}/latest.zip
+
+      - name: Upload Assets ZIP as GitHub artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: latest-assets.zip
+          path: assets.zip

@@ -1,8 +1,18 @@
 # Fuel Verified Assets
 
-To keep our users safe and secure, Fuel has compiled this official list of verified assets that will be available at network launch.
+To keep our users safe and secure, Fuel has compiled this official list of verified assets that are available across our network.
 
 Developers wishing to maintain a full list of on-chain assets should develop their own indexed solutions and be aware of the security risks that might exist by doing so.
+
+## Using this repository
+
+The information in this repository is published to a CDN maintained by Fuel. The current list of verified assets can be found at the following URL:
+
+    https://verified-assets.fuel.network/assets.json
+
+Any projects wishing to use this information are welcome to, however this is done at your own risk.
+
+
 
 ## Included Files
 
@@ -21,7 +31,3 @@ The reference `chainPath` in the assets entries contains `'major_network.chain_n
 ### cdn.json
 
 This is the cdn where icons are hosted. Please be polite when using this CDN and cache all images yourself to help with Fuel's bandwidth costs.
-
-### Examples Folder
-
-This folder contains examples of how to build fully composed JSON from each of the three files above that would be used in a project. Please feel free to adapt to your purposes.

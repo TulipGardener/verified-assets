@@ -39,12 +39,12 @@ body:
       label: Networks
       description: Networks where the asset is deployed.
       options:
-        - Ethereum Mainnet (1)
-        - Ethereum Sepolia (11155111)
-        - Ethereum Foundry (31337)
-        - Fuel Devnet (0)
-        - Fuel Testnet (0)
-        - Fuel Mainnet (9889)
+        - label: Ethereum Mainnet (1)
+        - label: Ethereum Sepolia (11155111)
+        - label: Ethereum Foundry (31337)
+        - label: Fuel Devnet (0)
+        - label: Fuel Testnet (0)
+        - label: Fuel Mainnet (9889)
     validations:
       required: false
   - type: textarea

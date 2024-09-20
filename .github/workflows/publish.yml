@@ -48,13 +48,13 @@ jobs:
           printf "@ assets.local.gen.json\n@=assets.json\n" | zipnote -w assets.zip
 
       - name: Sync images to S3
-        run: s3cmd --delete-removed sync ./images/ s3://${{ env.AWS_S3_BUCKET }}/images/
+        run: s3cmd --no-preserve --delete-removed sync ./images/ s3://${{ env.AWS_S3_BUCKET }}/images/
 
       - name: Upload Assets JSON to S3
-        run: s3cmd put ./assets.cdn.gen.json s3://${{ env.AWS_S3_BUCKET }}/assets.json
+        run: s3cmd --no-preserve put ./assets.cdn.gen.json s3://${{ env.AWS_S3_BUCKET }}/assets.json
 
       - name: Upload Assets ZIP to S3
-        run: s3cmd put ./assets.zip s3://${{ env.AWS_S3_BUCKET }}/latest.zip
+        run: s3cmd --no-preserve put ./assets.zip s3://${{ env.AWS_S3_BUCKET }}/latest.zip
 
       - name: Upload Assets ZIP as GitHub artifact
         uses: actions/upload-artifact@v4

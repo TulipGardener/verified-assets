@@ -18,9 +18,9 @@ local_data = []
 cdn_data = []
 
 for asset in assets:
-	final_asset = deepcopy(asset)
+	converted_asset = deepcopy(asset)
 
-	for network in final_asset["networks"]:
+	for network in converted_asset["networks"]:
 
 		# Convert chainPath to chainId
 		major_network, chain = network['chainPath'].split('.')
@@ -30,11 +30,11 @@ for asset in assets:
 		del network['chainPath']
 
 	# write out the local version
-	local_data.append(deepcopy(final_asset))
+	local_data.append(deepcopy(converted_asset))
 
 	# Update the icon to use the proper full cdn path
-	final_asset['icon'] = cdn['icon'] + final_asset['icon']
-	cdn_data.append(final_asset)
+	converted_asset['icon'] = cdn['icon'] + converted_asset['icon']
+	cdn_data.append(converted_asset)
 
 with open('assets.local.gen.json', 'w') as f:
 	# use separators to minify output

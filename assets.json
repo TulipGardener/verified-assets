@@ -2,7 +2,7 @@
     {
         "name": "Ethereum",
         "symbol": "ETH",
-        "icon": "eth.svg",
+        "icon": "images/eth.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -42,7 +42,7 @@
     {
         "name": "WETH",
         "symbol": "WETH",
-        "icon": "weth.svg",
+        "icon": "images/weth.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -62,7 +62,7 @@
     {
         "name": "weETH",
         "symbol": "weETH",
-        "icon": "weETH.webp",
+        "icon": "images/weETH.webp",
         "networks": [
             {
                 "type": "ethereum",
@@ -82,7 +82,7 @@
     {
         "name": "rsETH",
         "symbol": "rsETH",
-        "icon": "rsETH.webp",
+        "icon": "images/rsETH.webp",
         "networks": [
             {
                 "type": "ethereum",
@@ -102,7 +102,7 @@
     {
         "name": "rETH",
         "symbol": "rETH",
-        "icon": "reth.svg",
+        "icon": "images/reth.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -122,7 +122,7 @@
     {
         "name": "wbETH",
         "symbol": "wbETH",
-        "icon": "wbeth.png",
+        "icon": "images/wbeth.png",
         "networks": [
             {
                 "type": "ethereum",
@@ -142,7 +142,7 @@
     {
         "name": "rstETH",
         "symbol": "rstETH",
-        "icon": "rstETH.webp",
+        "icon": "images/rstETH.webp",
         "networks": [
             {
                 "type": "ethereum",
@@ -162,7 +162,7 @@
     {
         "name": "amphrETH",
         "symbol": "amphrETH",
-        "icon": "amphrETH.png",
+        "icon": "images/amphrETH.png",
         "networks": [
             {
                 "type": "ethereum",
@@ -182,7 +182,7 @@
     {
         "name": "Manta mBTC",
         "symbol": "Manta mBTC",
-        "icon": "manta-mbtc.svg",
+        "icon": "images/manta-mbtc.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -202,7 +202,7 @@
     {
         "name": "Manta mETH",
         "symbol": "Manta mETH",
-        "icon": "manta-meth.svg",
+        "icon": "images/manta-meth.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -222,7 +222,7 @@
     {
         "name": "Manta mUSD",
         "symbol": "Manta mUSD",
-        "icon": "manta-musd.svg",
+        "icon": "images/manta-musd.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -242,7 +242,7 @@
     {
         "name": "pumpBTC",
         "symbol": "pumpBTC",
-        "icon": "pumpbtc.webp",
+        "icon": "images/pumpbtc.webp",
         "networks": [
             {
                 "type": "ethereum",
@@ -262,7 +262,7 @@
     {
         "name": "FBTC",
         "symbol": "FBTC",
-        "icon": "fbtc.svg",
+        "icon": "images/fbtc.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -282,7 +282,7 @@
     {
         "name": "SolvBTC",
         "symbol": "SolvBTC",
-        "icon": "solvBTC.webp",
+        "icon": "images/solvBTC.webp",
         "networks": [
             {
                 "type": "ethereum",
@@ -302,7 +302,7 @@
     {
         "name": "SolvBTC.BBN",
         "symbol": "SolvBTC.BBN",
-        "icon": "SolvBTC.BBN.png",
+        "icon": "images/SolvBTC.BBN.png",
         "networks": [
             {
                 "type": "ethereum",
@@ -322,7 +322,7 @@
     {
         "name": "Mantle mETH",
         "symbol": "Mantle mETH",
-        "icon": "mantle-meth.svg",
+        "icon": "images/mantle-meth.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -342,7 +342,7 @@
     {
         "name": "sDAI",
         "symbol": "sDAI",
-        "icon": "sdai.svg",
+        "icon": "images/sdai.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -362,7 +362,7 @@
     {
         "name": "USDT",
         "symbol": "USDT",
-        "icon": "usdt.svg",
+        "icon": "images/usdt.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -382,7 +382,7 @@
     {
         "name": "USDC",
         "symbol": "USDC",
-        "icon": "usdc.svg",
+        "icon": "images/usdc.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -402,7 +402,7 @@
     {
         "name": "USDe",
         "symbol": "USDe",
-        "icon": "USDe.svg",
+        "icon": "images/USDe.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -435,7 +435,7 @@
     {
         "name": "sUSDe",
         "symbol": "sUSDe",
-        "icon": "sUSDe.webp",
+        "icon": "images/sUSDe.webp",
         "networks": [
             {
                 "type": "ethereum",
@@ -468,7 +468,7 @@
     {
         "name": "rsUSDe",
         "symbol": "rsUSDe",
-        "icon": "rsUSDe.svg",
+        "icon": "images/rsUSDe.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -488,7 +488,7 @@
     {
         "name": "wstETH",
         "symbol": "wstETH",
-        "icon": "wsteth.svg",
+        "icon": "images/wsteth.svg",
         "networks": [
             {
                 "type": "ethereum",
@@ -521,7 +521,7 @@
     {
         "name": "ezETH",
         "symbol": "ezETH",
-        "icon": "ezeth.webp",
+        "icon": "images/ezeth.webp",
         "networks": [
             {
                 "type": "ethereum",
@@ -541,7 +541,7 @@
     {
         "name": "pzETH",
         "symbol": "pzETH",
-        "icon": "pzETH.webp",
+        "icon": "images/pzETH.webp",
         "networks": [
             {
                 "type": "ethereum",
@@ -561,7 +561,7 @@
     {
         "name": "Re7LRT",
         "symbol": "Re7LRT",
-        "icon": "Re7LRT.png",
+        "icon": "images/Re7LRT.png",
         "networks": [
             {
                 "type": "ethereum",
@@ -581,7 +581,7 @@
     {
         "name": "steakLRT",
         "symbol": "steakLRT",
-        "icon": "steakLRT.png",
+        "icon": "images/steakLRT.png",
         "networks": [
             {
                 "type": "ethereum",

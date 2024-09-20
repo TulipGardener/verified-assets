@@ -12,7 +12,13 @@ The information in this repository is published to a CDN maintained by Fuel. The
 
 Any projects wishing to use this information are welcome to, however this is done at your own risk.
 
+You can also download the latest asset information and icons in a single archive. This is great if you want to locally cache this list, or include it as part of a release pipeline in your own tools and libraries:
 
+    https://verified-assets.fuel.network/latest.zip
+
+## Submitting new assets
+
+To submit new assets for inclusion in the verified assets list, [open a new Issue](https://github.com/FuelLabs/verified-assets/issues/new?assignees=&labels=update+info&projects=&template=submit_info.yml&title=Update+info+for+ASSET_NAME). Be sure to fill out all the fields on the issue form.
 
 ## Included Files
 

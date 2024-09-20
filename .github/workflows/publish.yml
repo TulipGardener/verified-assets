@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - main
 
 env:
   GIT_BRANCH: ${{ github.head_ref || github.ref_name }}

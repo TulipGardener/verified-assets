@@ -8,3 +8,4 @@
 .cov
 .idea
 .env
+*.gen.json

@@ -5,13 +5,13 @@ import os
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-with open(os.path.join(CURRENT_DIR, '..', '..', 'assets.json'), 'r') as infile:
+with open(os.path.join(CURRENT_DIR, 'assets.json'), 'r') as infile:
 	assets = json.load(infile)
 
-with open(os.path.join(CURRENT_DIR, '..', '..', 'chains.json'), 'r') as infile:
+with open(os.path.join(CURRENT_DIR, 'chains.json'), 'r') as infile:
 	chains = json.load(infile)
 
-with open(os.path.join(CURRENT_DIR, '..', '..', 'cdn.json'), 'r') as infile:
+with open(os.path.join(CURRENT_DIR, 'cdn.json'), 'r') as infile:
 	cdn = json.load(infile)
 
 data = []
@@ -33,4 +33,6 @@ for asset in assets:
 
 	data.append(final_asset)
 
-print(json.dumps(data, indent = 4))
+with open('assets.gen.json', 'w') as f:
+	# use separators to minify output
+    json.dump(data, f, separators=(',', ':'))

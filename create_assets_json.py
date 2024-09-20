@@ -14,13 +14,11 @@ with open(os.path.join(CURRENT_DIR, 'chains.json'), 'r') as infile:
 with open(os.path.join(CURRENT_DIR, 'cdn.json'), 'r') as infile:
 	cdn = json.load(infile)
 
-data = []
+local_data = []
+cdn_data = []
 
 for asset in assets:
 	final_asset = deepcopy(asset)
-
-	# Update the icon to use the proper full cdn path
-	final_asset['icon'] = cdn['icon'] + final_asset['icon']
 
 	for network in final_asset["networks"]:
 
@@ -31,8 +29,17 @@ for asset in assets:
 		# And remove chainPath
 		del network['chainPath']
 
-	data.append(final_asset)
+	# write out the local version
+	local_data.append(deepcopy(final_asset))
 
-with open('assets.gen.json', 'w') as f:
+	# Update the icon to use the proper full cdn path
+	final_asset['icon'] = cdn['icon'] + final_asset['icon']
+	cdn_data.append(final_asset)
+
+with open('assets.local.gen.json', 'w') as f:
 	# use separators to minify output
-    json.dump(data, f, separators=(',', ':'))
+    json.dump(local_data, f, separators=(',', ':'))
+
+with open('assets.cdn.gen.json', 'w') as f:
+	# use separators to minify output
+    json.dump(cdn_data, f, separators=(',', ':'))

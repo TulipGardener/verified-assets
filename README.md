@@ -34,12 +34,27 @@ This file is used to build the `assets.gen.json` file
 
 Finalized list of asset configurations. This file is published to the CDN, and is the format that should be used by all projects integrating with this repository.
 
-It is built from the contents of the `assets.json` file using the `create_assets_json.py` script.
+It is built from the contents of the `assets.json` file using the `create_assets_json.py` script. Check [setup environment](#setup-environment) for more information.
 
 ### `ASSETS.md`
 
-User friendly list of all currently supported assets, including their network, addresses, and other metadata. It is built from the contents of the `assets.gen.json` file using the `create_assets_md.py` script.
+User friendly list of all currently supported assets, including their network, addresses, and other metadata. It is built from the contents of the `assets.gen.json` file using the `create_assets_md.py` script. Check [setup environment](#setup-environment) for more information.
 
 ### `config.json`
 
 Configuration variables for bridge contracts, CDN URLs, and other information needed to generate the `assets.gen.json` and `ASSETS.md` files. It is used by the Python scripts.
+
+## Setup environment
+
+### Create environment
+
+```bash
+python3 -m venv ./.venv
+source ./.venv/bin/activate
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```

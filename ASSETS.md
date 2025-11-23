@@ -63,6 +63,7 @@
 | `pzETH` | [`0x8c9532a60e0e7c6bbd2b2c1303f63ace1c3e9811`](https://etherscan.io/address/0x8c9532a60e0e7c6bbd2b2c1303f63ace1c3e9811) | `18` |
 | `Re7LRT` | [`0x84631c0d0081FDe56DeB72F6DE77abBbF6A9f93a`](https://etherscan.io/address/0x84631c0d0081FDe56DeB72F6DE77abBbF6A9f93a) | `18` |
 | `steakLRT` | [`0xBEEF69Ac7870777598A04B2bd4771c71212E6aBc`](https://etherscan.io/address/0xBEEF69Ac7870777598A04B2bd4771c71212E6aBc) | `18` |
+| `MOOR` | [`0xfc280b8e8c2e574b99d63e29c75872737575c594`](https://etherscan.io/address/0xfc280b8e8c2e574b99d63e29c75872737575c594) | `18` |
 
 ## Fuel Devnet
 
@@ -121,4 +122,6 @@
 | `uwFUEL` | `0x27821a5432b60fb3e70c64d0a612c2c86218c1088dd0f0f1b0dd6ae5ae17bd5b` | `0x0f9f509374c2da68997a3a1ad6d85be3f351c2f5f3da4c65bdbfad9b0bb25504` | `9` |
 | `uwETH` | `0xac2aabc1c48e634800a723b1372388ad1eb6a23d0e012cde4c603082fb1a140a` | `0x0f9f509374c2da68997a3a1ad6d85be3f351c2f5f3da4c65bdbfad9b0bb25504` | `9` |
 | `uwUSDC` | `0x6c91bc65f585da1a238f8ec5e410e62616d2b2c8f2cb4701e225deb51240add6` | `0x0f9f509374c2da68997a3a1ad6d85be3f351c2f5f3da4c65bdbfad9b0bb25504` | `9` |
+| `USDM` | `0x0e9bdca5d5d53f65f2e8d3ecfb9accb5cb2c56e5beff5793de51e854a2c25234` | `0x9373f5ff5ef3b5aaafa5d026cf53c8c83e83e5d5d8af66b22e68bd21fa27c8bf` | `9` |
+| `MOOR` | `0xa9d7987a3f2c2fb02b287c3a2ef619046e930848c6050d31efef48ad6d3bdee8` | `0x4ea6ccef1215d9479f1024dff70fc055ca538215d2c8c348beddffd54583d0e8` | `9` |
 
